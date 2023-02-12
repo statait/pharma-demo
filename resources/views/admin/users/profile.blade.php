@@ -144,7 +144,7 @@
 						<h5 class="card-title">Change Password</h5>
 						<div class="row">
 							<div class="col-md-10 col-lg-12">
-								<form method="POST" action="{{route('update-password',auth()->user())}}">
+								<form>
 									@csrf
 									@method("PUT")
 									<div class="form-group">
@@ -159,7 +159,7 @@
 										<label>Confirm Password</label>
 										<input type="password" name="password_confirmation" class="form-control" placeholder="repeat your new password">
 									</div>
-									<button class="btn btn-primary" type="submit">Save Changes</button>
+									<button disabled class="btn btn-primary" type="submit">Save Changes</button>
 								</form>
 							</div>
 						</div>

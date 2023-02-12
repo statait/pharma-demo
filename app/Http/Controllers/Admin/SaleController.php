@@ -51,7 +51,7 @@ class SaleController extends Controller
                     ->addColumn('action', function ($row) {
                         $editbtn = '<a href="'.route("sale.details", $row->id).'" class="editbtn"><button class="btn btn-primary"><i class="fas fa-edit"></i></button></a>';
                         $downloadbtn = '<a href="'.route("sale.download", $row->id).'" class="btn btn-danger" title="Download Sale"><i class="fa fa-download"></i></a>';
-                        $deletebtn = '<a data-id="'.$row->id.'" data-route="'.route('sales.destroy', $row->id).'" href="javascript:void(0)" id="deletebtn"><button class="btn btn-danger"><i class="fas fa-trash"></i></button></a>';
+                        $deletebtn = '<a><button class="btn btn-danger"><i class="fas fa-trash"></i></button></a>';
                         if (!auth()->user()->hasPermissionTo('edit-sale')) {
                             $editbtn = '';
                         }

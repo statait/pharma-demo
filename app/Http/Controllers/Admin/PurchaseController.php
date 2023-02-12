@@ -50,7 +50,7 @@ class PurchaseController extends Controller
                 })
                 ->addColumn('action', function ($row) {
                     $editbtn = '<a href="'.route("purchases.edit", $row->id).'" class="editbtn"><button class="btn btn-primary"><i class="fas fa-edit"></i></button></a>';
-                    $deletebtn = '<a data-id="'.$row->id.'" data-route="'.route('purchases.destroy', $row->id).'" href="javascript:void(0)" id="deletebtn"><button class="btn btn-danger"><i class="fas fa-trash"></i></button></a>';
+                    $deletebtn = '<a><button class="btn btn-danger"><i class="fas fa-trash"></i></button></a>';
                     if (!auth()->user()->hasPermissionTo('edit-purchase')) {
                         $editbtn = '';
                     }

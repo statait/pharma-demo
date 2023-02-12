@@ -21,6 +21,23 @@
 </form>
 <!-- /Form -->
 
+
 <div class="text-center forgotpass"><a href="{{route('password.request')}}">Forgot Password?</a></div>
 <div class="text-center dont-have">Don’t have an account? <a href="{{route('register')}}">Register</a></div>
+<br>
+<table class="table">
+	<thead class="thead-dark">
+		<tr>
+			<th>E-Mail</th>
+			<th>Password</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td>admin@admin.com</td>
+		<td>pass</td>
+		</tr>
+	</tbody>
+</table>
+
 @endsection
