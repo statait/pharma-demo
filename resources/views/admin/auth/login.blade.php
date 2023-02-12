@@ -35,7 +35,7 @@
 	<tbody>
 		<tr>
 		<td>admin@admin.com</td>
-		<td>pass</td>
+		<td>admin</td>
 		</tr>
 	</tbody>
 </table>
