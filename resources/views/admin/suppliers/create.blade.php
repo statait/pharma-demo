@@ -23,7 +23,7 @@
 				
 		
 			<!-- Add Supplier -->
-			<form method="post" enctype="multipart/form-data" action="{{route('suppliers.store')}}">
+			<form >
 				@csrf
 				
 				<div class="service-fields mb-3">
@@ -80,7 +80,7 @@
 				</div>
 				
 				<div class="submit-section">
-					<button class="btn btn-primary submit-btn" type="submit" name="form_submit" value="submit">Submit</button>
+					<button disabled class="btn btn-primary submit-btn" type="submit" name="form_submit" value="submit">Submit</button>
 				</div>
 			</form>
 			<!-- /Add Medicine -->

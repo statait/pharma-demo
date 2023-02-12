@@ -55,7 +55,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<form method="POST" action="{{route('expenses.store')}}">
+				<form>
 					@csrf
 					<div class="row form-row">
 						<div class="col-6">
@@ -97,7 +97,7 @@
 							</div>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+					<button disabled type="submit" class="btn btn-primary btn-block">Save Changes</button>
 				</form>
 			</div>
 		</div>
@@ -116,7 +116,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<form method="post" action="{{route('expenses.update')}}">
+				<form>
 					@csrf
 					@method("PUT")
 					<div class="row form-row">
@@ -156,7 +156,7 @@
 							</div>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+					<button disabled type="submit" class="btn btn-primary btn-block">Save Changes</button>
 				</form>
 			</div>
 		</div>

@@ -84,7 +84,7 @@
 										</button>
 									</div>
 									<div class="modal-body">
-										<form method="POST" enctype="multipart/form-data" action="{{route('profile.update',auth()->user())}}">
+										<form>
 											@csrf
 											<div class="row form-row">
 												<div class="col-12">
@@ -119,7 +119,7 @@
 												</div>
 
 											</div>
-											<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+											<button disabled type="submit" class="btn btn-primary btn-block">Save Changes</button>
 										</form>
 									</div>
 								</div>

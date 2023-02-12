@@ -6,10 +6,10 @@
 
 @push('page-header')
 <div class="col-sm-12">
-	<h3 class="page-title">Edit Product</h3>
+	<h3 class="page-title">Edit Supplier</h3>
 	<ul class="breadcrumb">
 		<li class="breadcrumb-item"><a href="{{route('dashboard')}}">Dashboard</a></li>
-		<li class="breadcrumb-item active">Edit Product</li>
+		<li class="breadcrumb-item active">Edit Supplier</li>
 	</ul>
 </div>
 @endpush
@@ -21,7 +21,7 @@
 			<div class="card-body custom-edit-service">
 			
 			<!-- Edit Supplier -->
-			<form method="post" enctype="multipart/form-data" action="{{route('suppliers.update',$supplier)}}">
+			<form>
 				@csrf
 				@method("PUT")
 				<div class="service-fields mb-3">
@@ -79,7 +79,7 @@
 				
 				
 				<div class="submit-section">
-					<button class="btn btn-primary submit-btn" type="submit" name="form_submit" value="submit">Submit</button>
+					<button disabled class="btn btn-primary submit-btn" type="submit" name="form_submit" value="submit">Submit</button>
 				</div>
 			</form>
 

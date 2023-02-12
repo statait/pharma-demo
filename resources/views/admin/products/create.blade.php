@@ -21,7 +21,7 @@
 		<div class="card">
 			<div class="card-body custom-edit-service">
                 <!-- Add Product -->
-                <form method="post" enctype="multipart/form-data" id="update_service" action="{{route('products.store')}}">
+                <form>
                     @csrf
                     <div class="service-fields mb-3">
                         <div class="row">
@@ -74,7 +74,7 @@
                     
                     
                     <div class="submit-section">
-                        <button class="btn btn-primary submit-btn" type="submit" name="form_submit" value="submit">Submit</button>
+                        <button disabled class="btn btn-primary submit-btn" type="submit" name="form_submit" value="submit">Submit</button>
                     </div>
                 </form>
                 <!-- /Add Product -->

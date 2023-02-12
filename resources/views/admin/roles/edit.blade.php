@@ -24,7 +24,7 @@
             </div>
             <div class="card-body">
                 <div class="p-5">
-                    <form method="POST" action="{{route('roles.update',$role)}}">
+                    <form>
                         @csrf
                         @method("PUT")
                         <div class="form-group">
@@ -42,7 +42,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+                        <button disabled type="submit" class="btn btn-primary btn-block">Save Changes</button>
                     </form>
                 </div>
             </div>

@@ -21,7 +21,7 @@
 			<div class="card-body custom-edit-service">
 			
 			<!-- Edit Supplier -->
-			<form method="post" enctype="multipart/form-data" autocomplete="off" action="{{route('purchases.update',$purchase)}}">
+			<form>
 				@csrf
 				@method("PUT")
 				<div class="service-fields mb-3">
@@ -91,7 +91,7 @@
 				
 				
 				<div class="submit-section">
-					<button class="btn btn-primary submit-btn" type="submit" >Submit</button>
+					<button disabled class="btn btn-primary submit-btn" type="submit" >Submit</button>
 				</div>
 			</form>
 			<!-- /Edit Supplier -->

@@ -21,7 +21,7 @@
 		<div class="card">
 			<div class="card-body custom-edit-service">
                 <!-- Create Sale -->
-                <form method="POST" action="{{route('sales.store')}}">
+                <form>
 					@csrf
 					<div class="row mb-3">
 						<div class="col-1"><label>Date</label></div>
@@ -103,7 +103,7 @@
 							</div>
 						</div>
 						
-						<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+						<button disabled type="submit" class="btn btn-primary btn-block">Save Changes</button>
 			
 					</div>
 				</form>
